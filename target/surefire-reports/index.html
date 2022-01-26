@@ -102,12 +102,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.tcs.testcases.Basepage_TestCaseID_001" class="method navigator-link" hash-for-method="basenavigation(restrcicteduser@gmail.com, password2)">basenavigation(restrcicteduser@gmail.com, password2)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.tcs.testcases.Basepage_TestCaseID_001" class="method navigator-link" hash-for-method="basenavigation(nonrestrictadeuser@gmail.com, password1)">basenavigation(nonrestrictadeuser@gmail.com, password1)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.tcs.testcases.Basepage_TestCaseID_001" class="method navigator-link" hash-for-method="basenavigation(nonrestrictadeuser@gmail.com, password1)">basenavigation(nonrestrictadeuser@gmail.com, password1)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.tcs.testcases.Basepage_TestCaseID_001" class="method navigator-link" hash-for-method="basenavigation(restrcicteduser@gmail.com, password2)">basenavigation(restrcicteduser@gmail.com, password2)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -150,18 +150,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="basenavigation(restrcicteduser@gmail.com, password2)">
-                  </a> <!-- basenavigation(restrcicteduser@gmail.com, password2) -->
-                  <span class="method-name">basenavigation</span>
-                  <span class="parameters">(restrcicteduser@gmail.com, password2)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="basenavigation(nonrestrictadeuser@gmail.com, password1)">
                   </a> <!-- basenavigation(nonrestrictadeuser@gmail.com, password1) -->
                   <span class="method-name">basenavigation</span>
                   <span class="parameters">(nonrestrictadeuser@gmail.com, password1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="basenavigation(restrcicteduser@gmail.com, password2)">
+                  </a> <!-- basenavigation(restrcicteduser@gmail.com, password2) -->
+                  <span class="method-name">basenavigation</span>
+                  <span class="parameters">(restrcicteduser@gmail.com, password2)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -175,8 +175,11 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.tcs.resources.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;classes&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.tcs.testcases.Basepage_TestCaseID_001&quot;/&gt;
       &lt;class name=&quot;com.tcs.testcases.ValidateTile&quot;/&gt;
@@ -223,20 +226,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'basenavigation')
 data.setCell(0, 2, 'com.tcs.testcases.Basepage_TestCaseID_001')
-data.setCell(0, 3, 14739);
+data.setCell(0, 3, 10289);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'basenavigation')
 data.setCell(1, 2, 'com.tcs.testcases.Basepage_TestCaseID_001')
-data.setCell(1, 3, 11661);
+data.setCell(1, 3, 5280);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'validateTiltle')
 data.setCell(2, 2, 'com.tcs.testcases.ValidateTile')
-data.setCell(2, 3, 131);
+data.setCell(2, 3, 1434);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <span class="suite-total-time">Total running time: 17 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -272,38 +275,44 @@ return data;
               <div class="chronological-class-name">com.tcs.testcases.Basepage_TestCaseID_001</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">driverstart</span>
-                <span class="method-start">27918 ms</span>
+                <span class="method-start">39644 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">basenavigation(nonrestrictadeuser@gmail.com, password1)</span>
-                <span class="method-start">47965 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">62714 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">driverstart</span>
-                <span class="method-start">65567 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">basenavigation(restrcicteduser@gmail.com, password2)</span>
-                <span class="method-start">88283 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">99945 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.tcs.testcases.ValidateTile</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">validateTiltle</span>
-                <span class="method-start">105951 ms</span>
+                <span class="method-start">39644 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tcs.testcases.Basepage_TestCaseID_001</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">basenavigation(nonrestrictadeuser@gmail.com, password1)</span>
+                <span class="method-start">59608 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">69900 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">driverstart</span>
+                <span class="method-start">73010 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">basenavigation(restrcicteduser@gmail.com, password2)</span>
+                <span class="method-start">95764 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">101046 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.tcs.testcases.ValidateTile</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">106082 ms</span>
+                <span class="method-start">103363 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
