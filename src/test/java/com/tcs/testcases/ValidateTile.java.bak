@@ -35,7 +35,7 @@ public class ValidateTile extends Base {
 	public void validateTiltle() {
 		
 		LoginPage l= new LoginPage(driver);
-		Assert.assertEquals(l.featuredcoursetext(), "FEATURED COURSES");
+		Assert.assertEquals(l.featuredcoursetext(), "FEATURED COURSES12");
 		log.info("text has been asserted");
 		
 	}
