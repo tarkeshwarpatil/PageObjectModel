@@ -24,7 +24,12 @@ public class Base {
 		
 		prop.load(file);
 		
-		String browsername= prop.getProperty("browser");
+		//to drive intput from mvn command we have to get property from system
+		//String browsername= prop.getProperty("browser");
+		
+		String browsername= System.getProperty("browser");
+		
+		//command mvn test -Dbrowser=chrome
 		
 		if(browsername.equalsIgnoreCase("chrome")) {
 		
